@@ -79,6 +79,15 @@ server {
     root /path/to/neckup/files;
     expires 365d;
   }
+
+  location / {
+    try_files $uri $uri/ $uri/index.html @files;
+  }
+
+  location @files {
+    root /path/to/neckup/files;
+    expires 365d;
+  }
 }
 
 server {
