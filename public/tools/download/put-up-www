@@ -1,0 +1,4 @@
+#!/bin/bash
+# Author: Magnus Kronnäs (krm)
+
+curl -F "file=@$1" https://nup.pw/ | grep li | tr \<,\>\" " " | cut -d " " -f10,13,17
