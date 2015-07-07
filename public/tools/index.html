@@ -21,6 +21,8 @@
   <h2>put-up</h2>
   <ul>
     <li><strong>Author</strong>: Magnus Kronnäs (krm)</li>
+    <li><strong>Language</strong>: Shell</li>
+    <li><strong>Dependencies</strong>: cURL</li>
     <li><strong>Download</strong>: 
     <ul>
       <li>Hyperboria:<a href="download/put-up-hype">download/put-up-hype</a></li>
@@ -31,14 +33,47 @@
   <p>
   Upload files easily from the CLI.
   <p>
-  </p>
+  <strong>Usage:</strong>
+  <pre>
+    put-up-hype file
+  </pre>
   <strong>Example:</strong>
   <pre>
     $ put-up-hype yourFileHere.ext
-    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                   Dload  Upload   Total   Spent    Left  Speed
-    100 24899  100   761  100 24138   1259  39943 --:--:-- --:--:-- --:--:-- 48276
-    yourFileHere.ext : http://h.nup.pw/hash.ext
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+      100 24899  100   761  100 24138   1259  39943 --:--:-- --:--:-- --:--:-- 48276
+      yourFileHere.ext : http://h.nup.pw/hash.ext
+  </pre>
+  </p>
+</article>
+<hr />
+<article>
+  <h2>nupup</h2>
+  <ul>
+    <li><strong>Author</strong>: William Wennerström (willeponken)</li>
+    <li><strong>License</strong>: GPL-3.0</li>
+    <li><strong>Dependencies</strong>: cURL</li>
+    <li><strong>Language</strong>: Shell</li>
+    <li><strong>Download</strong>: <a href="download/nupup">download/nupup</a></li>
+  </ul>
+  <p>
+  Single or multiple file upload, with Internet and Hyperboria support.
+  <p>
+  <strong>Usage:</strong>
+  <pre>
+    nupup [-a http(s)://address] [-h] file ..
+
+        -a {http(s)://address}  Upload address.
+        -h                      Use the Hyperboria address (h.nup.pw).
+        file ..                 A list of file names.
+  </pre>
+  <strong>Example:</strong>
+  <pre>
+    $ nupup yourFileHere0.ext yourFileHere1.ext
+      ######################################################################## 100.0%
+      yourFileHere0.ext: https://nup.pw/hash.ext
+      yourFileHere1.ext: https://nup.pw/hash.ext
   </pre>
   </p>
 </article>
