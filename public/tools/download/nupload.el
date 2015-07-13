@@ -25,7 +25,7 @@
 ;; --- constants
 (defconst nupload-upload-url "https://nup.pw")
 (defconst nupload-hyperboria-upload-url "http://h.nup.pw")
-(defconst nupload--regex "<a href=\"\\(https://nup.pw/.+?\\)\"")
+(defconst nupload--regex "<a href=\"\\(https?://\\(?:h\.\\)?nup\.pw/.+?\\)\"")
 
 ;; ---- config options
 (defcustom nupload-use-hyperboria nil
