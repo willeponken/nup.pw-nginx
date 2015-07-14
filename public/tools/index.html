@@ -1,97 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Tools - nup.pw</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-<meta charset="UTF-8"> 
-</head>
-<body>
+  <head>
+    <title>Tools - nup.pw</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta charset="UTF-8"> 
+  </head>
+  <body>
 
-<header>
+    <header>
 
   <h1>nup.pw - Tools</h1>
 
-</header>
-  
-<hr />
+    </header>
+    
+    <hr />
 
-<main>
+    <main>
 
-<article>
-  <h2>put-up</h2>
-  <ul>
-    <li><strong>Author</strong>: Magnus Kronnäs (krm)</li>
-    <li><strong>Language</strong>: Shell</li>
-    <li><strong>Dependencies</strong>: cURL</li>
-    <li><strong>Download</strong>: 
-    <ul>
-      <li>Hyperboria:<a href="download/put-up-hype">download/put-up-hype</a></li>
-      <li>Internet:<a href="download/put-up-www">download/put-up-www</a></li>
-    </ul>
-    </li>
-  </ul>
-  <p>
-  Upload files easily from the CLI.
-  <p>
-  <strong>Usage:</strong>
-  <pre>
-    put-up-hype file
-  </pre>
-  <strong>Example:</strong>
-  <pre>
-    $ put-up-hype yourFileHere.ext
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-      100 24899  100   761  100 24138   1259  39943 --:--:-- --:--:-- --:--:-- 48276
-      yourFileHere.ext : http://h.nup.pw/hash.ext
-  </pre>
-  </p>
-</article>
-<hr />
-<article>
-  <h2>nupup</h2>
-  <ul>
-    <li><strong>Author</strong>: William Wennerström (willeponken)</li>
-    <li><strong>License</strong>: GPL-3.0</li>
-    <li><strong>Dependencies</strong>: cURL</li>
-    <li><strong>Language</strong>: Shell</li>
-    <li><strong>Download</strong>: <a href="download/nupup">download/nupup</a></li>
-  </ul>
-  <p>
-  Single or multiple file upload, with Internet (default) and Hyperboria support.
-  <p>
-  <strong>Usage:</strong>
-  <pre>
-    nupup [-a http(s)://address] [-h] file ..
+      <article>
+	<h2>put-up</h2>
+	<ul>
+	  <li><strong>Author</strong>: Magnus Kronnäs (krm)</li>
+	  <li><strong>Language</strong>: Shell</li>
+	  <li><strong>Dependencies</strong>: cURL</li>
+	  <li><strong>Download</strong>: 
+	    <ul>
+	      <li>Hyperboria:<a href="download/put-up-hype">download/put-up-hype</a></li>
+	      <li>Internet:<a href="download/put-up-www">download/put-up-www</a></li>
+	    </ul>
+	  </li>
+	</ul>
+	<p>
+	  Upload files easily from the CLI.
+	<p>
+	  <strong>Usage:</strong>
+	  <pre>
+	    put-up-hype file
+	  </pre>
+	  <strong>Example:</strong>
+	  <pre>
+	    $ put-up-hype yourFileHere.ext
+	    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+            Dload  Upload   Total   Spent    Left  Speed
+	    100 24899  100   761  100 24138   1259  39943 --:--:-- --:--:-- --:--:-- 48276
+	    yourFileHere.ext : http://h.nup.pw/hash.ext
+	  </pre>
+	</p>
+      </article>
+      <hr />
+      <article>
+	<h2>nupup</h2>
+	<ul>
+	  <li><strong>Author</strong>: William Wennerström (willeponken)</li>
+	  <li><strong>License</strong>: GPL-3.0</li>
+	  <li><strong>Dependencies</strong>: cURL</li>
+	  <li><strong>Language</strong>: Shell</li>
+	  <li><strong>Download</strong>: <a href="download/nupup">download/nupup</a></li>
+	</ul>
+	<p>
+	  Single or multiple file upload, with Internet (default) and Hyperboria support.
+	<p>
+	  <strong>Usage:</strong>
+	  <pre>
+	    nupup [-a http(s)://address] [-h] file ..
 
-        -a {http(s)://address}  Upload address.
-        -h                      Use the Hyperboria address (h.nup.pw).
-        file ..                 A list of file names.
-  </pre>
-  <strong>Example:</strong>
-  <pre>
-    $ nupup yourFileHere0.ext yourFileHere1.ext
-      ######################################################################## 100.0%
-      yourFileHere0.ext: https://nup.pw/hash.ext
-      yourFileHere1.ext: https://nup.pw/hash.ext
-  </pre>
-  </p>
-</article>
+            -a {http(s)://address}  Upload address.
+            -h                      Use the Hyperboria address (h.nup.pw).
+            file ..                 A list of file names.
+	  </pre>
+	  <strong>Example:</strong>
+	  <pre>
+	    $ nupup yourFileHere0.ext yourFileHere1.ext
+	    ######################################################################## 100.0%
+	    yourFileHere0.ext: https://nup.pw/hash.ext
+	    yourFileHere1.ext: https://nup.pw/hash.ext
+	  </pre>
+	</p>
+      </article>
 
-</main>
+      <hr />
+      <article>
+	<h2>gonup</h2>
+	<ul>
+	  <li><strong>Author</strong>: oniichaNj (oniichan@mrowr.me)</li>
+	  <li><strong>License</strong>: GPL-3.0</li>
+	  <li><strong>Dependencies</strong>: None</li>
+	  <li><strong>Language</strong>: Go</li>
+	  <li><strong>Source download</strong>: <a href="download/gonup.go">download/gonup.go</a></li>
+	  <li><strong>AMD64 binary download</strong>: <a href="download/gonup.bin">download/gonup.bin</a></li>
+	</ul>
+	<p>
+	  Golang file uploader for nup.pw, using only standard libraries. Supports multiple files in sequence. No hyperboria support to date.<br />
+	  Works on any system to include a Golang compiler, such as Microsoft® Windows™, Plan 9, OS X and of course GNU/Linux.
+	<p>
+	  <strong>Compiling:</strong>
+	  <pre>
+	    go build gonup.pw
+	  </pre>
+	  <strong>Usage:</strong>
+	  <pre>
+	    gonup file<sub>1</sub> file<sub>2</sub> ... file<sub>N</sub>
+	  </pre>
+	  <strong>Example:</strong>
+	  <pre>
+	    $ gonup *
+	    file.jpg uploading.
+	    https://nup.pw/hash.jpg
+	    foo.tex uploading.
+	    https://nup.pw/hash.tex
+	  </pre>
+	</p>
+      </article>
 
-<hr />
+      
 
-<footer>
+      <hr />
+      <article>
+	<h2>nupload</h2>
+	<ul>
+	  <li><strong>Author</strong>: pinku (pinku@pinku.pw)</li>
+	  <li><strong>License</strong>: GPL-3.0</li>
+	  <li><strong>Dependencies</strong>: cURL, emacs </li>
+	  <li><strong>Language</strong>: Emacs Lisp</li>
+	  <li><strong>Download</strong>: <a href="download/nupload.el">download/gonup.go</a></li>
+	</ul>
+	<p>
+	  Emacs Lisp nup.pw client. Can upload both files and buffers over both the Internet and Hyperboria.
+	<p>
+	  <strong>Installing:</strong>
+	  <ul>
+	    <li>Add nupload.el to somewhere in your load-path</li>
+	    <li><pre>(require 'nupload)</pre></li>
+	  </ul>
+	  <strong>Usage:</strong>
+	  <pre>
+	    <pre>M-x nupload RET</pre> or <pre>M-x nupload-file</pre>
+	  </pre>
+	</p>
+      </article>
 
-  <address>
-    <p>
-      <strong>Contact</strong><br />
-      E-mail: <a href="mailto:neckbeard@nup.pw">neckbeard@nup.pw</a>
-    </p>
-  </address>
+      
+    </main>
 
-</footer>
+    <hr />
 
-</body>
+    <footer>
+
+      <address>
+	<p>
+	  <strong>Contact</strong><br />
+	  E-mail: <a href="mailto:neckbeard@nup.pw">neckbeard@nup.pw</a>
+	</p>
+      </address>
+
+    </footer>
+
+  </body>
 </html>
