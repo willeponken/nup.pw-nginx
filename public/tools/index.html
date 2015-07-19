@@ -24,29 +24,24 @@
   <h2>put-up</h2>
   <ul>
     <li><strong>Author</strong>: Magnus Kronnäs (krm)</li>
-    <li><strong>Language</strong>: Shell</li>
+    <li><strong>Language</strong>: Bash</li>
     <li><strong>Dependencies</strong>: cURL</li>
-    <li><strong>Download</strong>: 
-    <ul>
-      <li>Hyperboria:<a href="download/put-up-hype">download/put-up-hype</a></li>
-      <li>Internet:<a href="download/put-up-www">download/put-up-www</a></li>
-    </ul>
+    <li><strong>Download</strong>: <a href="download/put-up">download/put-up</a></li>
     </li>
   </ul>
   <p>
-  Upload files easily from the CLI.
+  Upload files easily from the CLI. Uploads to Hyperboria (h.nup.pw) by default.
   <p>
   <strong>Usage:</strong>
   <pre>
-      put-up-hype file
+      put-up yourFileHere.ext
   </pre>
   <strong>Example:</strong>
   <pre>
-      $ put-up-hype yourFileHere.ext
-      % Total    % Received % Xferd  Average Spe ~
-            Dload  Upload   Total   Spent    Lef ~
-      100 24899  100   761  100 24138   1259  39 ~
-      yourFileHere.ext : http://h.nup.pw/hash.ext
+      $ put-up yourFileHere.ext
+      [12:47:06] Uploading:  yourFileHere.ext 
+      ######################################################################## 100.0%
+      [12:47:07] Done:  put-up -> http://h.nup.pw/RBfRq9
   </pre>
   </p>
 </article>
