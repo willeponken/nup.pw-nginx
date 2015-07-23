@@ -1,0 +1,15 @@
+{
+  "hostname": "h.nup.pw",
+  "contact": {
+    "name": "neckbeard",
+    "email": "neckbeard@nup.pw"
+  },
+  "last_modified": "2015-07-23T00:35:48+00:00",
+  "services": [
+    {
+      "uri": "http://[fcf5:894b:a246:fa31:f395:6e8d:31b6:f9f9]/",
+      "name": "h.nup.pw",
+      "description": "Permanent file uploads (max 50 MB) for all those neckbeards."
+    }
+  ]
+}
